@@ -45,7 +45,7 @@ navbar:
     github:
       text: source code
       icon: fa-lg fa-github
-      href: https://github.com/user/repo
+      href: https://github.com/crumplab/InstanceMemory
 
 home:
   strip_header: false
