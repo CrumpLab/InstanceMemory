@@ -22,13 +22,13 @@ navbar:
     manuscript:
       text: Manuscript
       menu:
-      - text: APA6 PDF
+      - text: Instance Memory Collaborative Review
         href: manuscript/manuscript.pdf
     articles:
-      text: Supplementary
+      text: Instructions
       menu:
-      - text: Supplementary
-        href: articles/som.html
+      - text: Instructions
+        href: articles/instructions.html
     slides:
       text: Slides
       menu:

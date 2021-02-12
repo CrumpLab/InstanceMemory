@@ -27,19 +27,7 @@ authornote: |
   Correspondence concerning this article should be addressed to Matthew J. C. Crump, Department of Psychology, Brooklyn College of the City University of New York, 2900 Bedford Avenue, Brooklyn, NY 11210.
 
 abstract: |
-  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
-  
-  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
-  
-  One sentence clearly stating the **general problem** being addressed by  this particular study.
-  
-  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
-  
-  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
-  
-  One or two sentences to put the results into a more **general context**.
-  
-  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+  This abstract needs to be completed.
   
   <!-- https://tinyurl.com/ybremelq -->
   
@@ -52,7 +40,7 @@ floatsintext      : no
 figurelist        : no
 tablelist         : no
 footnotelist      : no
-linenumbers       : yes
+linenumbers       : no
 mask              : no
 draft             : no
 
@@ -75,16 +63,12 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 <!-- this is a comment -->
 
-askdjfhaldksjhfladsjhf
-a
-sdf
-asd
-f
-adsf
-adsf
-asd
-fds
-f
+The purpose of this document is to review issues related to instance-based perspectives on cognition. The intention is that this document will be created collaboratively by members of the Computational Cognition Laboratory at Brooklyn College of the City University of New York.
+
+Topics for review include classic perspectives, theories, and models of instance-based processes in cognition; and, debates between instance-based perspectives and other cognitive theories as they relate to explanations of cognitive phenomena. It is also worth focusing on linkages between predictions of instance theory and evidence of those predictions in the empirical records. In other words, what manipulations, measures, and domains are commonly used to supply evidence for instance-based processing.
+
+As this review document grows it should supply new students with a repository of knowledge about instance-based processing that they can use to guide their scholarship in this domain. Contributions to this review should also focus on identifying new topics for study that relate or extend prior topics.
+
 
 
 

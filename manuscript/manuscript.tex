@@ -4,15 +4,14 @@
 %
 \documentclass[
   english,
-  man]{apa6}
+  jou]{apa6}
 \usepackage{lmodern}
-\usepackage{amsmath}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
-  \usepackage{amssymb}
 \else % if luatex or xetex
   \usepackage{unicode-math}
   \defaultfontfeatures{Scale=MatchLowercase}
@@ -114,15 +113,9 @@
 \makeatother
 \shorttitle{Instance Memory}
 \keywords{keywords\newline\indent Word count: X}
-\DeclareDelayedFloatFlavor{ThreePartTable}{table}
-\DeclareDelayedFloatFlavor{lltable}{table}
-\DeclareDelayedFloatFlavor*{longtable}{table}
-\makeatletter
-\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
-\makeatother
-\usepackage{lineno}
+\usepackage{dblfloatfix}
 
-\linenumbers
+
 \usepackage{csquotes}
 \ifxetex
   % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
@@ -131,29 +124,11 @@
 \else
   \usepackage[shorthands=off,main=english]{babel}
 \fi
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \newlength{\cslhangindent}
 \setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
-  % set entry spacing
-  \ifnum #2 > 0
-  \setlength{\parskip}{#2\baselineskip}
-  \fi
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
 
 \title{A collaborative review of issues in Instance Memory}
 \author{Matthew J. C. Crump\textsuperscript{1,2} \& TBD\textsuperscript{1}}
@@ -173,19 +148,7 @@ Correspondence concerning this article should be addressed to Matthew J. C. Crum
 \affiliation{\vspace{0.5cm}\textsuperscript{1} Brooklyn College of CUNY\\\textsuperscript{2} Graduate Center of CUNY}
 
 \abstract{
-One or two sentences providing a \textbf{basic introduction} to the field, comprehensible to a scientist in any discipline.
-
-Two to three sentences of \textbf{more detailed background}, comprehensible to scientists in related disciplines.
-
-One sentence clearly stating the \textbf{general problem} being addressed by this particular study.
-
-One sentence summarizing the main result (with the words ``\textbf{here we show}'' or their equivalent).
-
-Two or three sentences explaining what the \textbf{main result} reveals in direct comparison to what was thought to be the case previously, or how the main result adds to previous knowledge.
-
-One or two sentences to put the results into a more \textbf{general context}.
-
-Two or three sentences to provide a \textbf{broader perspective}, readily comprehensible to a scientist in any discipline.
+This abstract needs to be completed.
 }
 
 
@@ -193,30 +156,14 @@ Two or three sentences to provide a \textbf{broader perspective}, readily compre
 \begin{document}
 \maketitle
 
-\hypertarget{methods}{%
-\section{Methods}\label{methods}}
+\hypertarget{introduction}{%
+\subsection{Introduction}\label{introduction}}
 
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study.
+The purpose of this document is to review issues related to instance-based perspectives on cognition. The intention is that this document will be created collaboratively by members of the Computational Cognition Laboratory at Brooklyn College of the City University of New York.
 
-\hypertarget{participants}{%
-\subsection{Participants}\label{participants}}
+Topics for review include classic perspectives, theories, and models of instance-based processes in cognition; and, debates between instance-based perspectives and other cognitive theories as they relate to explanations of cognitive phenomena. It is also worth focusing on linkages between predictions of instance theory and evidence of those predictions in the empirical records. In other words, what manipulations, measures, and domains are commonly used to supply evidence for instance-based processing.
 
-\hypertarget{material}{%
-\subsection{Material}\label{material}}
-
-\hypertarget{procedure}{%
-\subsection{Procedure}\label{procedure}}
-
-\hypertarget{data-analysis}{%
-\subsection{Data analysis}\label{data-analysis}}
-
-We used R {[}Version 4.0.2; R Core Team (2020){]} and the R-package \emph{papaja} {[}Version 0.1.0.9997; Aust and Barth (2020){]} for all our analyses.
-
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+As this review document grows it should supply new students with a repository of knowledge about instance-based processing that they can use to guide their scholarship in this domain. Contributions to this review should also focus on identifying new topics for study that relate or extend prior topics.
 
 \newpage
 
@@ -228,14 +175,8 @@ We used R {[}Version 4.0.2; R Core Team (2020){]} and the R-package \emph{papaja
 \setlength{\leftskip}{0.5in}
 
 \hypertarget{refs}{}
-\begin{CSLReferences}{1}{0}
-\leavevmode\hypertarget{ref-R-papaja}{}%
-Aust, F., \& Barth, M. (2020). \emph{{papaja}: {Create} {APA} manuscripts with {R Markdown}}. Retrieved from \url{https://github.com/crsh/papaja}
-
-\leavevmode\hypertarget{ref-R-base}{}%
-R Core Team. (2020). \emph{R: A language and environment for statistical computing}. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from \url{https://www.R-project.org/}
-
-\end{CSLReferences}
+\begin{cslreferences}
+\end{cslreferences}
 
 \endgroup
 

@@ -1,0 +1,23 @@
+---
+title: "Contribution Instructions"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This is a quick start guide to making contributions to this project. This guide needs to be expanded to be more helpful, and students can also contribute to this guide.
+
+1. Fork this repo
+2. Make sure you have R, Rstudio, and all of the necessary packages installed, including [vertical](https://crumplab.github.io/vertical/)
+3. Make sure your Latex installation is working, you will need this to compile APA documents with papaja, [see this for some help](https://crumplab.github.io/psyc7709Lab/articles/course_docs/reference_code.html#papaja-1).
+4. Make changes to the documents, the manuscript is currently in the manuscript folder.
+5. Submit pull-requests to Dr. Crump to have them incorporated into this repository
+
+This repository is set up as a [vertical](https://crumplab.github.io/vertical/) project, which means that we can add different kinds of content using R Markdown, and have that content be displayed on the website (generated through [pkgdown](https://pkgdown.r-lib.org)). As mentioned above, currently we are writing in the manuscript folder and creating an APA style pdf using papaja. Feel free to explore other content options such as posters, slide decks or other documents types that could be useful for communicating on specific issues.
+
+All contributors will be acknowledged, and authorship will be formally acknowledged for any original content contributions.
+
